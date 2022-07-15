@@ -13,6 +13,7 @@
 		247FFFE2288215A8000F7D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247FFFE0288215A8000F7D86 /* Main.storyboard */; };
 		247FFFE4288215AA000F7D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247FFFE3288215AA000F7D86 /* Assets.xcassets */; };
 		247FFFE7288215AA000F7D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247FFFE5288215AA000F7D86 /* LaunchScreen.storyboard */; };
+		247FFFF228821C90000F7D86 /* CoordinatorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 247FFFF128821C90000F7D86 /* CoordinatorKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		247FFFE3288215AA000F7D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247FFFE6288215AA000F7D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		247FFFE8288215AA000F7D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247FFFEF28821880000F7D86 /* CoordinatorKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoordinatorKit; path = ../../CoordinatorKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247FFFF228821C90000F7D86 /* CoordinatorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		247FFFCE288215A8000F7D86 = {
 			isa = PBXGroup;
 			children = (
+				247FFFEE2882185B000F7D86 /* Packages */,
 				247FFFD9288215A8000F7D86 /* instagram */,
 				247FFFD8288215A8000F7D86 /* Products */,
+				247FFFF028821C90000F7D86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = instagram;
 			sourceTree = "<group>";
 		};
+		247FFFEE2882185B000F7D86 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				247FFFEF28821880000F7D86 /* CoordinatorKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		247FFFF028821C90000F7D86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = instagram;
+			packageProductDependencies = (
+				247FFFF128821C90000F7D86 /* CoordinatorKit */,
+			);
 			productName = instagram;
 			productReference = 247FFFD7288215A8000F7D86 /* instagram.app */;
 			productType = "com.apple.product-type.application";
@@ -291,7 +314,6 @@
 				INFOPLIST_FILE = instagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +340,6 @@
 				INFOPLIST_FILE = instagram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +377,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		247FFFF128821C90000F7D86 /* CoordinatorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoordinatorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 247FFFCF288215A8000F7D86 /* Project object */;
 }
